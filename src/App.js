@@ -1,17 +1,13 @@
-import ButtonApp from './Reusability/ButtonApp';
 import './App.css';
-import Avatar from './Reusability/Avatar';
-import bob from './Reusability/images/bob.jpg';
+import Menu from './Reusability/Menu/Menu';
 
 function App() {
   return (
     <>
-      <ButtonApp />
-      <Avatar src={bob} alt="Bob" />
-      <br />
-      <Avatar>BZ</Avatar>
-      <br />
-      <Avatar />
+      <Menu
+        buttonText="Sports"
+        items={["Tennis", "Racquetball", "Pickleball", "Squash"]}
+      />
     </>
   );
 }
